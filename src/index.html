@@ -9,28 +9,45 @@
 
 <body>
     <!-- navigation -->
-    <div class=" flex justify-between items-center py-4 w-auto bg-slate-100">
-        <img class="px-6 lg:px-[80px] " src="/img/logo.png" alt="">
-        <nav class="hidden lg:flex gap-12 justify-center font-semibold text-lg">
-            <a class="hover:text-green-600 hover:underline" href="index.html">Home</a>
-            <a class="hover:text-green-600 hover:underline" href="#">Shop</a>
-            <a class="hover:text-green-600 hover:underline" href="blog.html">Blog</a>
-            <a class="hover:text-green-600 hover:underline" href="about.html">About</a>
-            <a class="hover:text-green-600 hover:underline" href="contact.html">Contact-Us</a>
-            <a class="hover:text-green-600 hover:underline" href="cart.html"> <img class="w-8"
-                    src="/img/shopping-bag.png"></a>
-        </nav>
-        <a href="#" class="flex lg:hidden"> <img class="h-8 " src="/img/menu.png" alt=""></a>
+    <div class="relative">
+        <div class=" flex justify-between items-center py-4 w-auto bg-slate-100">
+            <img class="px-6 lg:px-[80px] " src="/img/logo.png" alt="">
+            <nav class="hidden lg:flex gap-12 justify-center font-semibold text-lg">
+                <a class="hover:text-green-600 hover:underline" href="index.html">Home</a>
+                <a class="hover:text-green-600 hover:underline" href="#">Shop</a>
+                <a class="hover:text-green-600 hover:underline" href="blog.html">Blog</a>
+                <a class="hover:text-green-600 hover:underline" href="about.html">About</a>
+                <a class="hover:text-green-600 hover:underline" href="contact.html">Contact-Us</a>
+                <a class="hover:text-green-600 hover:underline" href="cart.html"> <img class="w-8"
+                        src="/img/shopping-bag.png"></a>
+            </nav>
+
+            <a id="menuBtn" href="#" class="flex lg:hidden"> <img class="h-8 pr-2" src="/img/menu.png" alt=""></a>
+            <!-- Sliding Menu -->
+            <div id="sideMenu"
+                class="fixed top-0 right-0 h-full w-64 bg-gray-900 text-white p-5 transform translate-x-full transition-transform duration-300">
+                <button id="closeBtn" class="absolute top-4 right-4 text-white text-2xl">&times;</button>
+                <div class="flex gap-1 flex-col">
+
+                    <a class="hover:text-green-600 hover:underline" href="#">Home</a>
+                    <a class="hover:text-green-600 hover:underline" href="shop.html">Shop</a>
+                    <a class="hover:text-green-600 hover:underline" href="blog.html">Blog</a>
+                    <a class="hover:text-green-600 hover:underline" href="about.html">About</a>
+                    <a class="hover:text-green-600 hover:underline" href="contact.html">Contact-Us</a>
+
+                </div>
+            </div>
+        </div>
     </div>
     <!-- heroes section -->
-    <div class="relative md:flex md:flex-col ">
-        <img src="/img/hero4.png" alt="">
-        <div class="absolute top-7 left-7 lg:ml-[80px] lg:m-[100px]">
-            <h3 class="text-2xl font-bold sm:text-2xl"> Trade-in-offer </h3><br>
-            <h4 class="text-5xl font-bold sm:text-3xl"> Super value deals <br />
-                <span class="text-5xl text-green-400"> On all products </span>
-            </h4> <br />
-            <p class="text-lg font-light"> Save more with coupons & up to 70% off! </p>
+    <div class="bg-[url(/img/hero4.png)] md:flex md:flex-col bg-cover sm:h-full py-11 px-7">
+        <!-- <img src="/img/hero4.png" alt=""> -->
+        <div class="lg:ml-[80px] space-y-4 lg:m-[100px]">
+            <h3 class="text-lg sm:text-2xl font-bold "> Trade-in-offer </h3><br>
+            <h4 class="text-3xl font-bold sm:text-5xl"> Super value deals <br />
+                <span class="text-2xl sm:text-5xl text-green-400"> On all products </span>
+            </h4>
+            <p class="sm:text-lg tracking-tight text-sm font-light"> Save more with coupons & up to 70% off! </p>
             <div class="bg-[url('/img/button.png')] lg:mt-[50px] pl-[80px] bg-no-repeat">
                 <button class="p-2 lg:p-1 font-bold text-green-500"> Shop Now</button>
             </div>
@@ -71,7 +88,7 @@
         </div>
         <!-- features -->
         <div class="grid grid-cols-4 max-sm:grid-cols-2 max-md:grid-cols-3 gap-4">
-            <div class="rounded-3xl border border-gray-400 relative hover:shadow-2xl mb-3">
+            <div class="rounded-3xl border border-gray-400 relative hover:shadow-2xl">
                 <img class=" rounded-3xl" src="/img/f1.jpg">
                 <p class="font-light">adidas</p>
                 <h2 class="font-bold font-serif">Cotton astronaut t-shirts</h2>
@@ -359,7 +376,7 @@
             </div>
         </div>
     </div>
-    <section class="bg-slate-900 h-[200px] flex flex-row gap-x-24 max-lg:flex-col max-sm:flex-col">
+    <section class="bg-slate-900 flex flex-row gap-x-24 max-lg:flex-col max-sm:flex-col">
         <div class="flex flex-col items-start pl-16 pt-16">
             <h3 class="text-2xl font-bold text-white"> Sign Up For Newsletters </h3><br>
             <p class="text-gray-500 font-sans font-semibold text-lg">Get E-mail updates about our latest shop and <span
@@ -379,6 +396,7 @@
 
         </footer>
     </section>
+    <script src="script.js"></script>
 </body>
 
 </html>
