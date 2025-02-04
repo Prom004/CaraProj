@@ -557,9 +557,6 @@
   .left-4 {
     left: calc(var(--spacing) * 4);
   }
-  .m-9 {
-    margin: calc(var(--spacing) * 9);
-  }
   .m-\[50px\] {
     margin: 50px;
   }
@@ -584,6 +581,9 @@
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
   }
+  .mr-3 {
+    margin-right: calc(var(--spacing) * 3);
+  }
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
   }
@@ -601,6 +601,12 @@
   }
   .ml-1 {
     margin-left: calc(var(--spacing) * 1);
+  }
+  .ml-2 {
+    margin-left: calc(var(--spacing) * 2);
+  }
+  .ml-3 {
+    margin-left: calc(var(--spacing) * 3);
   }
   .block {
     display: block;
@@ -659,14 +665,14 @@
   .w-64 {
     width: calc(var(--spacing) * 64);
   }
-  .w-\[100vw\] {
-    width: 100vw;
-  }
   .w-\[400px\] {
     width: 400px;
   }
   .w-auto {
     width: auto;
+  }
+  .w-full {
+    width: 100%;
   }
   .max-w-\[1400px\] {
     max-width: 1400px;
@@ -761,17 +767,11 @@
   .bg-gray-400 {
     background-color: var(--color-gray-400);
   }
-  .bg-gray-500 {
-    background-color: var(--color-gray-500);
-  }
   .bg-gray-900 {
     background-color: var(--color-gray-900);
   }
   .bg-green-300 {
     background-color: var(--color-green-300);
-  }
-  .bg-green-500 {
-    background-color: var(--color-green-500);
   }
   .bg-pink-300 {
     background-color: var(--color-pink-300);
@@ -781,9 +781,6 @@
   }
   .bg-red-200 {
     background-color: var(--color-red-200);
-  }
-  .bg-slate-100 {
-    background-color: var(--color-slate-100);
   }
   .bg-slate-200 {
     background-color: var(--color-slate-200);
@@ -802,9 +799,6 @@
   }
   .bg-yellow-300 {
     background-color: var(--color-yellow-300);
-  }
-  .bg-\[url\(\/img\/b1\.jpeg\)\] {
-    background-image: url(/img/b1.jpeg);
   }
   .bg-\[url\(img\/b1\.jpeg\)\] {
     background-image: url(img/b1.jpeg);
@@ -999,13 +993,6 @@
   .outline-none {
     --tw-outline-style: none;
     outline-style: none;
-  }
-  .hover\:bg-amber-400 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-amber-400);
-      }
-    }
   }
   .hover\:bg-gray-500 {
     &:hover {
