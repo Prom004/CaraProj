@@ -8,27 +8,40 @@
     <link href="./output.css" rel="stylesheet">
 </head>
 
-<body>
-    <div class="relative">
+<body class="bg-slate-200">
+    <div class="max-w-[1400px] overflow-hidden mx-auto">
+ <div class="relative">
+            <div class=" flex justify-between items-center py-4 w-auto bg-slate-200">
+                <img class="px-6 lg:px-[80px] " src="img/logo.png" alt="">
+                <nav class="hidden lg:flex gap-12 justify-center font-semibold text-lg">
+                    <a class="hover:text-green-600 hover:underline" href="#">Home</a>
+                    <a class="hover:text-green-600 hover:underline" href="shop.html">Shop</a>
+                    <a class="hover:text-green-600 hover:underline" href="blog.html">Blog</a>
+                    <a class="hover:text-green-600 hover:underline" href="about.html">About</a>
+                    <a class="hover:text-green-600 hover:underline" href="contact.html">Contact-Us</a>
+                    <a class="hover:text-green-600 hover:underline" href="cart.html"> <img class="w-8"
+                            src="img/shopping-bag.png"></a>
+                </nav>
 
-        <div class=" flex justify-between items-center py-4 w-auto bg-slate-100">
-            <img class="px-6 lg:px-[80px] " src="/img/logo.png" alt="">
-            <nav class="hidden lg:flex gap-12 justify-center font-semibold text-lg">
-                <a class="hover:text-green-600 hover:underline" href="index.html">Home</a>
-                <a class="hover:text-green-600 hover:underline" href="#">Shop</a>
-                <a class="hover:text-green-600 hover:underline" href="blog.html">Blog</a>
-                <a class="hover:text-green-600 hover:underline" href="about.html">About</a>
-                <a class="hover:text-green-600 hover:underline" href="contact.html">Contact-Us</a>
-                <a class="hover:text-green-600 hover:underline" href="cart.html"> <img class="w-8"
-                        src="/img/shopping-bag.png"></a>
-            </nav>
-            <a href="#" class="flex lg:hidden"> <img class="h-8 " src="/img/menu.png" alt=""></a>
-        </div>
-        <div class="bg-red-500 absolute text-black right-0 ">texttt
-        </div>
-    </div>
+                <a id="menuBtn" href="#" class="flex lg:hidden"> <img class="h-8 pr-2" src="img/menu.png" alt=""></a>
+                <!-- Sliding Menu -->
+                <div id="sideMenu"
+                    class="fixed top-0 right-0 h-full w-64 bg-gray-900 text-white p-5 transform translate-x-full transition-transform duration-300">
+                    <button id="closeBtn" class="absolute top-4 right-4 text-white text-2xl">&times;</button>
+                    <div class="flex gap-1 flex-col">
 
-    <div class="bg-[url(/img/b1.jpeg)] relative h-[200px] flex justify-center items-center">
+                        <a class="hover:text-green-600 hover:underline" href="#">Home</a>
+                        <a class="hover:text-green-600 hover:underline" href="shop.html">Shop</a>
+                        <a class="hover:text-green-600 hover:underline" href="blog.html">Blog</a>
+                        <a class="hover:text-green-600 hover:underline" href="about.html">About</a>
+                        <a class="hover:text-green-600 hover:underline" href="contact.html">Contact-Us</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="bg-[url(img/b1.jpeg)] relative h-[200px] flex justify-center items-center">
         <!-- <img src="/img/b1.jpeg"> -->
         <div class="absolute flex flex-col items-center justify-center p-16">
             <h4 class="text-4xl text-white font-bold"> #stayhome</h4>
@@ -38,128 +51,130 @@
     <div class="">
         <div class="grid grid-cols-4 m-[50px] gap-4 max-sm:grid-cols-2 max-md:grid-cols-3">
             <div class="rounded-3xl border border-gray-400  p-2 relative hover:shadow-2xl md:shrink-0">
-                <img class=" rounded-3xl md:shrink-0" src="/img/f1.jpg">
+                <img class=" rounded-3xl md:shrink-0" src="img/f1.jpg">
                 <p class="font-light">adidas</p>
                 <h2 class="font-bold font-serif">Cotton astronaut t-shirts</h2>
                 <div class="flex gap-1 w-3 h-3">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
+                    <img src="img/star.png">
+                    <img src="img/star.png">
+                    <img src="img/star.png">
+                    <img src="img/star.png">
+                    <img src="img/star.png">
                 </div>
-                <p>$200/-</p>
+                <p class="text-lg">£200/-</p>
                 <img class="w-10 h-10 rounded-full p-1 bg-gray-400 absolute bottom-2 right-2"
-                    src="/img/shopping-cart.png" alt="">
+                    src="img/shopping-cart.png" alt="">
             </div>
             <div class="rounded-3xl border border-gray-400 p-2 relative hover:shadow-2xl">
-                <img class=" rounded-3xl" src="/img/f2.jpg">
+                <img class=" rounded-3xl" src="img/f2.jpg">
                 <p class="font-light">adidas</p>
                 <h2 class="font-bold font-serif">Cotton astronaut t-shirts</h2>
                 <div class="flex gap-1 w-3 h-3">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
+                    <img src="img/star.png">
+                    <img src="img/star.png">
+                    <img src="img/star.png">
+                    <img src="img/star.png">
+                    <img src="img/star.png">
                 </div>
-                <p>$200/-</p>
+                <p class="text-lg">£200/-</p>
                 <img class="w-10 h-10 rounded-full p-1 bg-gray-400 absolute bottom-2 right-2"
-                    src="/img/shopping-cart.png" alt="">
+                    src="img/shopping-cart.png" alt="">
             </div>
             <div class="rounded-3xl  border border-gray-400 p-2 relative hover:shadow-2xl">
-                <img class=" rounded-3xl" src="/img/f3.jpg">
+                <img class=" rounded-3xl" src="img/f3.jpg">
                 <p class="font-light">adidas</p>
                 <h2 class="font-bold font-serif">Cotton astronaut t-shirts</h2>
                 <div class="flex gap-1 w-3 h-3">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
+                    <img src="img/star.png">
+                    <img src="img/star.png">
+                    <img src="img/star.png">
+                    <img src="img/star.png">
+                    <img src="img/star.png">
                 </div>
-                <p>$200/-</p>
+                <p class="text-lg">£200/-</p>
                 <img class="w-10 h-10 rounded-full p-1 bg-gray-400 absolute bottom-2 right-2"
-                    src="/img/shopping-cart.png" alt="">
+                    src="img/shopping-cart.png" alt="">
             </div>
             <div class="rounded-3xl  border border-gray-400 p-2 relative hover:shadow-2xl">
-                <img class=" rounded-3xl" src="/img/f4.jpg">
+                <img class=" rounded-3xl" src="img/f4.jpg">
                 <p class="font-light">adidas</p>
                 <h2 class="font-bold font-serif">Cotton astronaut t-shirts</h2>
                 <div class="flex gap-1 w-3 h-3">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
+                    <img src="img/star.png">
+                    <img src="img/star.png">
+                    <img src="img/star.png">
+                    <img src="img/star.png">
+                    <img src="img/star.png">
                 </div>
-                <p>$200/-</p>
+                <p class="text-lg">£200/-</p>
                 <img class="w-10 h-10 rounded-full p-1 bg-gray-400 absolute bottom-2 right-2"
-                    src="/img/shopping-cart.png" alt="">
+                    src="img/shopping-cart.png" alt="">
             </div>
             <div class="rounded-3xl border border-gray-400 p-2 relative hover:shadow-2xl">
-                <img class=" rounded-3xl " src="/img/f5.jpg">
+                <img class=" rounded-3xl " src="img/f5.jpg">
                 <p class="font-light">adidas</p>
                 <h2 class="font-bold font-serif">Cotton astronaut t-shirts</h2>
                 <div class="flex gap-1 w-3 h-3">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
+                    <img src="img/star.png">
+                    <img src="img/star.png">
+                    <img src="img/star.png">
+                    <img src="img/star.png">
+                    <img src="img/star.png">
                 </div>
-                <p>$200/-</p>
+                <p class="text-lg">£200/-</p>
                 <img class="w-10 h-10 rounded-full p-1 bg-gray-400 absolute bottom-2 right-2"
-                    src="/img/shopping-cart.png" alt="">
+                    src="img/shopping-cart.png" alt="">
             </div>
             <div class="rounded-3xl border border-gray-400 p-2 relative hover:shadow-2xl">
-                <img class=" rounded-3xl" src="/img/f6.jpg">
+                <img class=" rounded-3xl" src="img/f6.jpg">
                 <p class="font-light">adidas</p>
                 <h2 class="font-bold font-serif">Cotton astronaut t-shirts</h2>
                 <div class="flex gap-1 w-3 h-3">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
+                    <img src="img/star.png">
+                    <img src="img/star.png">
+                    <img src="img/star.png">
+                    <img src="img/star.png">
+                    <img src="img/star.png">
                 </div>
-                <p>$200/-</p>
+                <p class="text-lg">£200/-</p>
                 <img class="w-10 h-10 rounded-full p-1 bg-gray-400 absolute bottom-2 right-2"
-                    src="/img/shopping-cart.png" alt="">
+                    src="img/shopping-cart.png" alt="">
             </div>
             <div class="rounded-3xl border border-gray-400 p-2 relative hover:shadow-2xl">
-                <img class=" rounded-3xl " src="/img/f7.jpg">
+                <img class=" rounded-3xl " src="img/f7.jpg">
                 <p class="font-light">adidas</p>
                 <h2 class="font-bold font-serif">Cotton astronaut t-shirts</h2>
                 <div class="flex gap-1 w-3 h-3">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
+                    <img src="img/star.png">
+                    <img src="img/star.png">
+                    <img src="img/star.png">
+                    <img src="img/star.png">
+                    <img src="img/star.png">
                 </div>
-                <p>$200/-</p>
+                <p class="text-lg">£200/-</p>
                 <img class="w-10 h-10 rounded-full p-1 bg-gray-400 absolute bottom-2 right-2"
-                    src="/img/shopping-cart.png" alt="">
+                    src="img/shopping-cart.png" alt="">
             </div>
             <div class="rounded-3xl border border-gray-400 p-2 relative hover:shadow-2xl">
-                <img class=" rounded-3xl " src="/img/f8.jpg">
+                <img class=" rounded-3xl " src="img/f8.jpg">
                 <p class="font-light">adidas</p>
                 <h2 class="font-bold font-serif">Cotton astronaut t-shirts</h2>
                 <div class="flex gap-1 w-3 h-3">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
+                    <img src="img/star.png">
+                    <img src="img/star.png">
+                    <img src="img/star.png">
+                    <img src="img/star.png">
+                    <img src="img/star.png">
                 </div>
-                <p>$200/-</p>
-                <img class="w-10 h-10 rounded-full p-1 bg-gray-400 absolute bottom-2 right-2"
-                    src="/img/shopping-cart.png" alt="">
+                <p class="text-lg">£200/-</p>
+                <img id="cart" class="w-10 h-10 rounded-full p-1 bg-gray-400 absolute bottom-2 right-2 hover:bg-gray-500"
+                    src="img/shopping-cart.png" alt="">
+                
             </div>
         </div>
     </div>
-
+</div>
+<script src="script.js"></script>
 </body>
 
 </html>
