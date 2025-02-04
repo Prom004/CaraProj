@@ -9,3 +9,11 @@ menuBtn.addEventListener("click", () => {
 closeBtn.addEventListener("click", () => {
   sideMenu.classList.add("translate-x-full");
 });
+
+// the shopping cart
+const cart= document.getElementById("cart");
+const ItemsSelected=[];
+
+cart.addEventListener('click', function addItem(){
+   
+})

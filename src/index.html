@@ -7,396 +7,410 @@
     <link href="./output.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="w-[100vw] bg-slate-200">
     <!-- navigation -->
-    <div class="relative">
-        <div class=" flex justify-between items-center py-4 w-auto bg-slate-100">
-            <img class="px-6 lg:px-[80px] " src="/img/logo.png" alt="">
-            <nav class="hidden lg:flex gap-12 justify-center font-semibold text-lg">
-                <a class="hover:text-green-600 hover:underline" href="index.html">Home</a>
-                <a class="hover:text-green-600 hover:underline" href="#">Shop</a>
-                <a class="hover:text-green-600 hover:underline" href="blog.html">Blog</a>
-                <a class="hover:text-green-600 hover:underline" href="about.html">About</a>
-                <a class="hover:text-green-600 hover:underline" href="contact.html">Contact-Us</a>
-                <a class="hover:text-green-600 hover:underline" href="cart.html"> <img class="w-8"
-                        src="/img/shopping-bag.png"></a>
-            </nav>
-
-            <a id="menuBtn" href="#" class="flex lg:hidden"> <img class="h-8 pr-2" src="/img/menu.png" alt=""></a>
-            <!-- Sliding Menu -->
-            <div id="sideMenu"
-                class="fixed top-0 right-0 h-full w-64 bg-gray-900 text-white p-5 transform translate-x-full transition-transform duration-300">
-                <button id="closeBtn" class="absolute top-4 right-4 text-white text-2xl">&times;</button>
-                <div class="flex gap-1 flex-col">
-
+    <div class="max-w-[1400px] overflow-hidden mx-auto">
+        <div class="relative">
+            <div class=" flex justify-between items-center py-4 w-auto bg-slate-200">
+                <img class="px-6 lg:px-[80px] " src="img/logo.png" alt="">
+                <nav class="hidden lg:flex gap-12 justify-center font-semibold text-lg">
                     <a class="hover:text-green-600 hover:underline" href="#">Home</a>
                     <a class="hover:text-green-600 hover:underline" href="shop.html">Shop</a>
                     <a class="hover:text-green-600 hover:underline" href="blog.html">Blog</a>
                     <a class="hover:text-green-600 hover:underline" href="about.html">About</a>
                     <a class="hover:text-green-600 hover:underline" href="contact.html">Contact-Us</a>
+                    <a class="hover:text-green-600 hover:underline" href="cart.html"> <img class="w-8"
+                            src="img/shopping-bag.png"></a>
+                </nav>
 
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- heroes section -->
-    <div class="bg-[url(/img/hero4.png)] md:flex md:flex-col bg-cover sm:h-full py-11 px-7">
-        <!-- <img src="/img/hero4.png" alt=""> -->
-        <div class="lg:ml-[80px] space-y-4 lg:m-[100px]">
-            <h3 class="text-lg sm:text-2xl font-bold "> Trade-in-offer </h3><br>
-            <h4 class="text-3xl font-bold sm:text-5xl"> Super value deals <br />
-                <span class="text-2xl sm:text-5xl text-green-400"> On all products </span>
-            </h4>
-            <p class="sm:text-lg tracking-tight text-sm font-light"> Save more with coupons & up to 70% off! </p>
-            <div class="bg-[url('/img/button.png')] lg:mt-[50px] pl-[80px] bg-no-repeat">
-                <button class="p-2 lg:p-1 font-bold text-green-500"> Shop Now</button>
-            </div>
-        </div>
-    </div>
-    <!-- features below the heroes section -->
-    <div class="m-[50px] flex justify-between gap-1 max-sm:grid max-sm:grid-cols-2 max-md:grid max-md:grid-cols-3">
-        <div class="rounded-lg border border-black p-3">
-            <img class="mt-3 ml-1" src="/img/f1.png">
-            <p class="mt-10 rounded-sm bg-red-200 text-black font-semibold px-1"> Free shipping </p>
-        </div>
-        <div class="rounded-lg border border-gray-400 p-3">
-            <img class="mt-3 ml-1" src="/img/f2.png">
-            <p class="mt-10 rounded-sm bg-green-300 text-black font-semibold mx-4 px-1"> Online order </p>
-        </div>
-        <div class="rounded-lg border border-gray-400 p-3">
-            <img class="mt-3 ml-1" src="/img/f3.png">
-            <p class="mt-10 rounded-sm bg-slate-400 text-black font-semibold  mx-4 px-1"> Save money </p>
-        </div>
-        <div class="rounded-lg border border-black p-3">
-            <img class="mt-3 ml-1" src="/img/f4.png">
-            <p class="mt-10 rounded-sm bg-purple-400 text-black font-semibold mx-4 px-1"> Promotions </p>
-        </div>
-        <div class="rounded-lg border border-black p-3">
-            <img class="mt-3 ml-1" src="/img/f5.png">
-            <p class="mt-10 rounded-sm bg-pink-300 text-black font-semibold mx-4 px-1"> Happy Sell </p>
-        </div>
-        <div class="rounded-lg border border-black p-3">
-            <img class="mt-3 ml-1" src="/img/f6.png">
-            <p class="mt-10 rounded-sm bg-yellow-300 text-black font-semibold mx-4 px-1"> 24/7 Support </p>
-        </div>
-    </div>
-    <!-- featured -->
-    <div class="m-[60px] md:m-[50px]">
-        <div class="items-center lg:pl-[400px]">
-            <h3 class="flex-1 items-center text-5xl font-bold"> Featured Products </h3><br />
-            <p class="font-light text-xl mb-4"> Summer Collection New Modern Design </p>
-        </div>
-        <!-- features -->
-        <div class="grid grid-cols-4 max-sm:grid-cols-2 max-md:grid-cols-3 gap-4">
-            <div class="rounded-3xl border border-gray-400 relative hover:shadow-2xl">
-                <img class=" rounded-3xl" src="/img/f1.jpg">
-                <p class="font-light">adidas</p>
-                <h2 class="font-bold font-serif">Cotton astronaut t-shirts</h2>
-                <div class="flex gap-1 w-3 h-3">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                </div>
-                <p>$200/-</p>
-                <img class="w-10 h-10 rounded-full p-1 bg-gray-400 absolute bottom-2 right-2"
-                    src="/img/shopping-cart.png" alt="">
-            </div>
-            <div class="rounded-3xl border border-gray-400 p-2 relative hover:shadow-2xl">
-                <img class=" rounded-3xl" src="/img/f2.jpg">
-                <p class="font-light">adidas</p>
-                <h2 class="font-bold font-serif">Cotton astronaut t-shirts</h2>
-                <div class="flex gap-1 w-3 h-3">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                </div>
-                <p>$200/-</p>
-                <img class="w-10 h-10 rounded-full p-1 bg-gray-400 absolute bottom-2 right-2"
-                    src="/img/shopping-cart.png" alt="">
-            </div>
-            <div class="rounded-3xl border border-gray-400 p-2 relative hover:shadow-2xl">
-                <img class=" rounded-3xl" src="/img/f3.jpg">
-                <p class="font-light">adidas</p>
-                <h2 class="font-bold font-serif">Cotton astronaut t-shirts</h2>
-                <div class="flex gap-1 w-3 h-3">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                </div>
-                <p>$200/-</p>
-                <img class="w-10 h-10 rounded-full p-1 bg-gray-400 absolute bottom-2 right-2"
-                    src="/img/shopping-cart.png" alt="">
-            </div>
-            <div class="rounded-3xl border border-gray-400 p-2 relative hover:shadow-2xl">
-                <img class=" rounded-3xl" src="/img/f4.jpg">
-                <p class="font-light">adidas</p>
-                <h2 class="font-bold font-serif">Cotton astronaut t-shirts</h2>
-                <div class="flex gap-1 w-3 h-3">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                </div>
-                <p>$200/-</p>
-                <img class="w-10 h-10 rounded-full p-1 bg-gray-400 absolute bottom-2 right-2"
-                    src="/img/shopping-cart.png" alt="">
-            </div>
-            <div class="rounded-3xl border border-gray-400 p-2 relative hover:shadow-2xl">
-                <img class=" rounded-3xl " src="/img/f5.jpg">
-                <p class="font-light">adidas</p>
-                <h2 class="font-bold font-serif">Cotton astronaut t-shirts</h2>
-                <div class="flex gap-1 w-3 h-3">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                </div>
-                <p>$200/-</p>
-                <img class="w-10 h-10 rounded-full p-1 bg-gray-400 absolute bottom-2 right-2"
-                    src="/img/shopping-cart.png" alt="">
-            </div>
-            <div class="rounded-3xl border border-gray-400 p-2 relative hover:shadow-2xl">
-                <img class=" rounded-3xl" src="/img/f6.jpg">
-                <p class="font-light">adidas</p>
-                <h2 class="font-bold font-serif">Cotton astronaut t-shirts</h2>
-                <div class="flex gap-1 w-3 h-3">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                </div>
-                <p>$200/-</p>
-                <img class="w-10 h-10 rounded-full p-1 bg-gray-400 absolute bottom-2 right-2"
-                    src="/img/shopping-cart.png" alt="">
-            </div>
-            <div class="rounded-3xl border border-gray-400 p-2 relative hover:shadow-2xl">
-                <img class=" rounded-3xl" src="/img/f7.jpg">
-                <p class="font-light">adidas</p>
-                <h2 class="font-bold font-serif">Cotton astronaut t-shirts</h2>
-                <div class="flex gap-1 w-3 h-3">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                </div>
-                <p>$200/-</p>
-                <img class="w-10 h-10 rounded-full p-1 bg-gray-400 absolute bottom-2 right-2"
-                    src="/img/shopping-cart.png" alt="">
-            </div>
-            <div class="rounded-3xl border border-gray-400 p-2 relative hover:shadow-2xl">
-                <img class=" rounded-3xl w-auto" src="/img/f8.jpg">
-                <p class="font-light">adidas</p>
-                <h2 class="font-bold font-serif">Cotton astronaut t-shirts</h2>
-                <div class="flex gap-1 w-3 h-3">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                </div>
-                <p>$200/-</p>
-                <img class="w-10 h-10 rounded-full p-1 bg-gray-400 absolute bottom-2 right-2"
-                    src="/img/shopping-cart.png" alt="">
-            </div>
-        </div>
-    </div>
-    <!-- Repair services -->
-    <div class="bg-[url(/img/b2.jpg)] mb-10 flex flex-col justify-center items-center">
-        <p class="text-2xl text-white font-bold pt-4">Reapir Services</p><br />
-        <h4 class="text-3xl font-extrabold text-white mb-[30px]"> Up to <span class="text-red-600">70% Off</span> - All
-            t-Shirts & Accessories</h4>
-        <a href="#" class="bg-white text-sm font-semibold px-5 py-3 rounded-sm mb-2 hover:bg-green-600"> Explore
-            more</a>
-    </div>
-    <!-- New Arrivals -->
-    <div class="m-[80px]">
-        <div class="flex flex-col items-center mb-[30px]">
-            <h4 class="text-4xl font-extrabold font-serif">New Arrivals</h4><br>
-            <p class="text-xl font-light">Summer Collection New Modern Design</p>
-        </div>
-        <div class="grid grid-cols-4 gap-4 max-sm:grid-cols-2 max-md:grid-cols-3">
-            <div class="rounded-3xl border border-gray-400 p-2 relative hover:shadow-2xl mb-3">
-                <img class=" rounded-3xl w-auto" src="/img/n1.jpg">
-                <p class="font-light">adidas</p>
-                <h2 class="font-bold font-serif">Cotton astronaut t-shirts</h2>
-                <div class="flex gap-1 w-3 h-3">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                </div>
-                <p>$200/-</p>
-                <img class="w-10 h-10 rounded-full p-1 bg-gray-400 absolute bottom-2 right-2"
-                    src="/img/shopping-cart.png" alt="">
-            </div>
-            <div class="rounded-3xl border border-gray-400 p-2 relative hover:shadow-2xl mb-3">
-                <img class=" rounded-3xl w-auto" src="/img/n2.jpg">
-                <p class="font-light">adidas</p>
-                <h2 class="font-bold font-serif">Cotton astronaut t-shirts</h2>
-                <div class="flex gap-1 w-3 h-3">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                </div>
-                <p>$200/-</p>
-                <img class="w-10 h-10 rounded-full p-1 bg-gray-400 absolute bottom-2 right-2"
-                    src="/img/shopping-cart.png" alt="">
-            </div>
-            <div class="rounded-3xl border border-gray-400 p-2 relative hover:shadow-2xl mb-3">
-                <img class=" rounded-3xl w-auto" src="/img/n3.jpg">
-                <p class="font-light">adidas</p>
-                <h2 class="font-bold font-serif">Cotton astronaut t-shirts</h2>
-                <div class="flex gap-1 w-3 h-3">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                </div>
-                <p>$200/-</p>
-                <img class="w-10 h-10 rounded-full p-1 bg-gray-400 absolute bottom-2 right-2"
-                    src="/img/shopping-cart.png" alt="">
-            </div>
-            <div class="rounded-3xl border border-gray-400 p-2 relative hover:shadow-2xl mb-3">
-                <img class=" rounded-3xl w-auto" src="/img/n4.jpg">
-                <p class="font-light">adidas</p>
-                <h2 class="font-bold font-serif">Cotton astronaut t-shirts</h2>
-                <div class="flex gap-1 w-3 h-3">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                </div>
-                <p>$200/-</p>
-                <img class="w-10 h-10 rounded-full p-1 bg-gray-400 absolute bottom-2 right-2"
-                    src="/img/shopping-cart.png" alt="">
-            </div>
-            <div class="rounded-3xl border border-gray-400 p-2 relative hover:shadow-2xl mb-3">
-                <img class=" rounded-3xl w-auto" src="/img/n5.jpg">
-                <p class="font-light">adidas</p>
-                <h2 class="font-bold font-serif">Cotton astronaut t-shirts</h2>
-                <div class="flex gap-1 w-3 h-3">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                </div>
-                <p>$200/-</p>
-                <img class="w-10 h-10 rounded-full p-1 bg-gray-400 absolute bottom-2 right-2"
-                    src="/img/shopping-cart.png" alt="">
-            </div>
-            <div class="rounded-3xl border border-gray-400 p-2 relative hover:shadow-2xl mb-3">
-                <img class=" rounded-3xl w-auto" src="/img/n6.jpg">
-                <p class="font-light">adidas</p>
-                <h2 class="font-bold font-serif">Cotton astronaut t-shirts</h2>
-                <div class="flex gap-1 w-3 h-3">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                </div>
-                <p>$200/-</p>
-                <img class="w-10 h-10 rounded-full p-1 bg-gray-400 absolute bottom-2 right-2"
-                    src="/img/shopping-cart.png" alt="">
-            </div>
-            <div class="rounded-3xl border border-gray-400 p-2 relative hover:shadow-2xl mb-3">
-                <img class=" rounded-3xl w-auto" src="/img/n7.jpg">
-                <p class="font-light">adidas</p>
-                <h2 class="font-bold font-serif">Cotton astronaut t-shirts</h2>
-                <div class="flex gap-1 w-3 h-3">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                </div>
-                <p>$200/-</p>
-                <img class="w-10 h-10 rounded-full p-1 bg-gray-400 absolute bottom-2 right-2"
-                    src="/img/shopping-cart.png" alt="">
-            </div>
-            <div class="rounded-3xl border border-gray-400 p-2 relative hover:shadow-2xl mb-3">
-                <img class=" rounded-3xl w-auto" src="/img/n8.jpg">
-                <p class="font-light">adidas</p>
-                <h2 class="font-bold font-serif">Cotton astronaut t-shirts</h2>
-                <div class="flex gap-1 w-3 h-3">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                    <img src="/img/star.png">
-                </div>
-                <p>$200/-</p>
-                <img class="w-10 h-10 rounded-full p-1 bg-gray-400 absolute bottom-2 right-2"
-                    src="/img/shopping-cart.png" alt="">
-            </div>
-        </div>
-    </div>
-    <!-- few pics -->
-    <div class="flex flex-col justify-end m-[50px] w-1/2">
-        <img src="/img/b17.jpg" alt="">
-        <img src="/img/b10.jpg" alt="">
-    </div>
-    <!-- before the footer -->
-    <div class="m-[100px] flex flex-row justify-center items-center max-lg:flex-col">
-        <div class="relative">
-            <img src="/img/b7.jpg" alt="">
-            <div class="absolute bottom-10 left-4">
-                <h4 class="text-white font-bold text-2xl">SEASONAL SALE</h4>
-                <p class="text-red-600 text-lg font-semibold"> Winter collection -50% OFF</p>
-            </div>
-        </div>
-        <div class="relative">
-            <img src="/img/b4.jpg" alt="">
-            <div class="absolute bottom-10 left-4">
-                <h4 class="text-white font-bold text-2xl">NEW FOOTWARE COLLECTION</h4>
-                <p class="text-red-600 text-lg font-semibold"> Spring/Summer 2023 </p>
-            </div>
-        </div>
-        <div class="relative">
-            <img src="/img/b18.jpg" alt="">
-            <div class="absolute bottom-10 left-4">
-                <h4 class="text-white font-bold text-2xl">T-SHIRTS</h4>
-                <p class="text-red-600 text-lg font-semibold"> New Trendy Prints </p>
-            </div>
-        </div>
-    </div>
-    <section class="bg-slate-900 flex flex-row gap-x-24 max-lg:flex-col max-sm:flex-col">
-        <div class="flex flex-col items-start pl-16 pt-16">
-            <h3 class="text-2xl font-bold text-white"> Sign Up For Newsletters </h3><br>
-            <p class="text-gray-500 font-sans font-semibold text-lg">Get E-mail updates about our latest shop and <span
-                    class="text-red-500">special offers.</span></p>
-        </div>
-        <div class="flex items-center justify-center h-24">
-            <input type="email"
-                class="bg-white relative rounded-sm flex-1 px-4 py-2 text-gray-700 placeholder-gray-500 outline-none w-[400px]"
-                placeholder="Your email address" />
-            <button class="bg-teal-500 px-6 py-2 text-white font-medium hover:bg-teal-600 transition">
-                Sign Up
-            </button>
-        </div>
+                <a id="menuBtn" href="#" class="flex lg:hidden"> <img class="h-8 pr-2" src="img/menu.png" alt=""></a>
+                <!-- Sliding Menu -->
+                <div id="sideMenu"
+                    class="fixed top-0 right-0 h-full w-64 bg-gray-900 text-white p-5 transform translate-x-full transition-transform duration-300">
+                    <button id="closeBtn" class="absolute top-4 right-4 text-white text-2xl">&times;</button>
+                    <div class="flex gap-1 flex-col">
 
-        <!-- footer -->
-        <footer>
+                        <a class="hover:text-green-600 hover:underline" href="#">Home</a>
+                        <a class="hover:text-green-600 hover:underline" href="shop.html">Shop</a>
+                        <a class="hover:text-green-600 hover:underline" href="blog.html">Blog</a>
+                        <a class="hover:text-green-600 hover:underline" href="about.html">About</a>
+                        <a class="hover:text-green-600 hover:underline" href="contact.html">Contact-Us</a>
 
-        </footer>
-    </section>
-    <script src="script.js"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- heroes section -->
+        <div class="bg-[url(img/hero4.png)] md:flex md:flex-col bg-cover sm:h-full py-11 px-7">
+            <!-- <img src="/img/hero4.png" alt=""> -->
+            <div class="lg:ml-[80px] space-y-4 lg:m-[100px]">
+                <h3 class="text-lg sm:text-2xl font-bold "> Trade-in-offer </h3><br>
+                <h4 class="text-3xl font-bold sm:text-5xl"> Super value deals <br />
+                    <span class="text-2xl sm:text-5xl text-green-400"> On all products </span>
+                </h4>
+                <p class="sm:text-lg tracking-tight text-sm font-light"> Save more with coupons & up to 70% off! </p>
+                <div class="bg-[url(img/button.png)] lg:mt-[50px] pl-[80px] bg-no-repeat">
+                    <button class="p-2 lg:p-1 font-bold text-green-500"> Shop Now</button>
+                </div>
+            </div>
+        </div>
+        <!-- features below the heroes section -->
+        <div class="m-[50px] flex justify-between gap-1 max-sm:grid max-sm:grid-cols-2 max-md:grid max-md:grid-cols-3">
+            <div class="rounded-lg border border-black p-3">
+                <img class="mt-3 ml-1" src="img/f1.png">
+                <p class="mt-10 rounded-sm bg-red-200 text-black font-semibold px-1 flex justify-center items-center">
+                    Free
+                    shipping </p>
+            </div>
+            <div class="rounded-lg border border-gray-400 p-3">
+                <img class="mt-3 ml-1" src="img/f2.png">
+                <p class="mt-10 rounded-sm bg-green-300 text-black font-semibold mx-4 flex justify-center items-center">
+                    Online order </p>
+            </div>
+            <div class="rounded-lg border border-gray-400 p-3">
+                <img class="mt-3 ml-1" src="img/f3.png">
+                <p
+                    class="mt-10 rounded-sm bg-slate-400 text-black font-semibold  mx-4 px-1 flex justify-center items-center">
+                    Save money </p>
+            </div>
+            <div class="rounded-lg border border-black p-3">
+                <img class="mt-3 ml-1" src="img/f4.png">
+                <p
+                    class="mt-10 rounded-sm bg-purple-400 text-black font-semibold mx-4 px-1 flex justify-center items-center">
+                    Promotions </p>
+            </div>
+            <div class="rounded-lg border border-black p-3">
+                <img class="mt-3 ml-1" src="img/f5.png">
+                <p class="mt-10 rounded-sm bg-pink-300 text-black font-semibold mx-4 flex justify-center items-center">
+                    Happy Sell </p>
+            </div>
+            <div class="rounded-lg border border-black p-3">
+                <img class="mt-3 ml-1" src="img/f6.png">
+                <p
+                    class="mt-10 rounded-sm bg-yellow-300 text-black font-semibold mx-4 flex justify-center items-center">
+                    24/7 Support </p>
+            </div>
+        </div>
+        <!-- featured -->
+        <div class="m-[60px] md:m-[50px]">
+            <div class="items-center lg:pl-[400px]">
+                <h3 class="flex-1 items-center text-5xl font-bold"> Featured Products </h3><br />
+                <p class="font-light text-xl mb-4"> Summer Collection New Modern Design </p>
+            </div>
+            <!-- features -->
+            <div class="grid grid-cols-4 max-sm:grid-cols-2 max-md:grid-cols-3 gap-4">
+                <div class="rounded-3xl border border-gray-400 relative hover:shadow-2xl">
+                    <img class=" rounded-3xl" src="img/f1.jpg">
+                    <p class="font-light">adidas</p>
+                    <h2 class="font-bold font-serif">Cotton astronaut t-shirts</h2>
+                    <div class="flex gap-1 w-3 h-3">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                    </div>
+                    <p>$200/-</p>
+                    <img class="w-10 h-10 rounded-full p-1 bg-gray-400 absolute bottom-2 right-2"
+                        src="img/shopping-cart.png" alt="">
+                </div>
+                <div class="rounded-3xl border border-gray-400 p-2 relative hover:shadow-2xl">
+                    <img class=" rounded-3xl" src="img/f2.jpg">
+                    <p class="font-light">adidas</p>
+                    <h2 class="font-bold font-serif">Cotton astronaut t-shirts</h2>
+                    <div class="flex gap-1 w-3 h-3">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                    </div>
+                    <p>$200/-</p>
+                    <img class="w-10 h-10 rounded-full p-1 bg-gray-400 absolute bottom-2 right-2"
+                        src="img/shopping-cart.png" alt="">
+                </div>
+                <div class="rounded-3xl border border-gray-400 p-2 relative hover:shadow-2xl">
+                    <img class=" rounded-3xl" src="img/f3.jpg">
+                    <p class="font-light">adidas</p>
+                    <h2 class="font-bold font-serif">Cotton astronaut t-shirts</h2>
+                    <div class="flex gap-1 w-3 h-3">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                    </div>
+                    <p>$200/-</p>
+                    <img class="w-10 h-10 rounded-full p-1 bg-gray-400 absolute bottom-2 right-2"
+                        src="img/shopping-cart.png" alt="">
+                </div>
+                <div class="rounded-3xl border border-gray-400 p-2 relative hover:shadow-2xl">
+                    <img class=" rounded-3xl" src="img/f4.jpg">
+                    <p class="font-light">adidas</p>
+                    <h2 class="font-bold font-serif">Cotton astronaut t-shirts</h2>
+                    <div class="flex gap-1 w-3 h-3">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                    </div>
+                    <p>$200/-</p>
+                    <img class="w-10 h-10 rounded-full p-1 bg-gray-400 absolute bottom-2 right-2"
+                        src="img/shopping-cart.png" alt="">
+                </div>
+                <div class="rounded-3xl border border-gray-400 p-2 relative hover:shadow-2xl">
+                    <img class=" rounded-3xl " src="img/f5.jpg">
+                    <p class="font-light">adidas</p>
+                    <h2 class="font-bold font-serif">Cotton astronaut t-shirts</h2>
+                    <div class="flex gap-1 w-3 h-3">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                    </div>
+                    <p>$200/-</p>
+                    <img class="w-10 h-10 rounded-full p-1 bg-gray-400 absolute bottom-2 right-2"
+                        src="img/shopping-cart.png" alt="">
+                </div>
+                <div class="rounded-3xl border border-gray-400 p-2 relative hover:shadow-2xl">
+                    <img class=" rounded-3xl" src="img/f6.jpg">
+                    <p class="font-light">adidas</p>
+                    <h2 class="font-bold font-serif">Cotton astronaut t-shirts</h2>
+                    <div class="flex gap-1 w-3 h-3">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                    </div>
+                    <p>$200/-</p>
+                    <img class="w-10 h-10 rounded-full p-1 bg-gray-400 absolute bottom-2 right-2"
+                        src="img/shopping-cart.png" alt="">
+                </div>
+                <div class="rounded-3xl border border-gray-400 p-2 relative hover:shadow-2xl">
+                    <img class=" rounded-3xl" src="img/f7.jpg">
+                    <p class="font-light">adidas</p>
+                    <h2 class="font-bold font-serif">Cotton astronaut t-shirts</h2>
+                    <div class="flex gap-1 w-3 h-3">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                    </div>
+                    <p>$200/-</p>
+                    <img class="w-10 h-10 rounded-full p-1 bg-gray-400 absolute bottom-2 right-2"
+                        src="img/shopping-cart.png" alt="">
+                </div>
+                <div class="rounded-3xl border border-gray-400 p-2 relative hover:shadow-2xl">
+                    <img class=" rounded-3xl w-auto" src="img/f8.jpg">
+                    <p class="font-light">adidas</p>
+                    <h2 class="font-bold font-serif">Cotton astronaut t-shirts</h2>
+                    <div class="flex gap-1 w-3 h-3">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                    </div>
+                    <p>$200/-</p>
+                    <img class="w-10 h-10 rounded-full p-1 bg-gray-400 absolute bottom-2 right-2"
+                        src="img/shopping-cart.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- Repair services -->
+        <div class="bg-[url(img/b2.jpg)] mb-10 flex flex-col justify-center items-center">
+            <p class="text-2xl text-white font-bold pt-4">Reapir Services</p><br />
+            <h4 class="text-3xl font-extrabold text-white mb-[30px]"> Up to <span class="text-red-600">70% Off</span> -
+                All
+                t-Shirts & Accessories</h4>
+            <a href="#" class="bg-white text-sm font-semibold px-5 py-3 rounded-sm mb-2 hover:bg-green-600"> Explore
+                more</a>
+        </div>
+        <!-- New Arrivals -->
+        <div class="m-[80px]">
+            <div class="flex flex-col items-center mb-[30px]">
+                <h4 class="text-4xl font-extrabold font-serif">New Arrivals</h4><br>
+                <p class="text-xl font-light">Summer Collection New Modern Design</p>
+            </div>
+            <div class="grid grid-cols-4 gap-4 max-sm:grid-cols-2 max-md:grid-cols-3">
+                <div class="rounded-3xl border border-gray-400 p-2 relative hover:shadow-2xl mb-3">
+                    <img class=" rounded-3xl w-auto" src="img/n1.jpg">
+                    <p class="font-light">adidas</p>
+                    <h2 class="font-bold font-serif">Cotton astronaut t-shirts</h2>
+                    <div class="flex gap-1 w-3 h-3">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                    </div>
+                    <p>$200/-</p>
+                    <img class="w-10 h-10 rounded-full p-1 bg-gray-400 absolute bottom-2 right-2"
+                        src="img/shopping-cart.png" alt="">
+                </div>
+                <div class="rounded-3xl border border-gray-400 p-2 relative hover:shadow-2xl mb-3">
+                    <img class=" rounded-3xl w-auto" src="img/n2.jpg">
+                    <p class="font-light">adidas</p>
+                    <h2 class="font-bold font-serif">Cotton astronaut t-shirts</h2>
+                    <div class="flex gap-1 w-3 h-3">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                    </div>
+                    <p>$200/-</p>
+                    <img class="w-10 h-10 rounded-full p-1 bg-gray-400 absolute bottom-2 right-2"
+                        src="img/shopping-cart.png" alt="">
+                </div>
+                <div class="rounded-3xl border border-gray-400 p-2 relative hover:shadow-2xl mb-3">
+                    <img class=" rounded-3xl w-auto" src="img/n3.jpg">
+                    <p class="font-light">adidas</p>
+                    <h2 class="font-bold font-serif">Cotton astronaut t-shirts</h2>
+                    <div class="flex gap-1 w-3 h-3">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                    </div>
+                    <p>$200/-</p>
+                    <img class="w-10 h-10 rounded-full p-1 bg-gray-400 absolute bottom-2 right-2"
+                        src="img/shopping-cart.png" alt="">
+                </div>
+                <div class="rounded-3xl border border-gray-400 p-2 relative hover:shadow-2xl mb-3">
+                    <img class=" rounded-3xl w-auto" src="img/n4.jpg">
+                    <p class="font-light">adidas</p>
+                    <h2 class="font-bold font-serif">Cotton astronaut t-shirts</h2>
+                    <div class="flex gap-1 w-3 h-3">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                    </div>
+                    <p>$200/-</p>
+                    <img class="w-10 h-10 rounded-full p-1 bg-gray-400 absolute bottom-2 right-2"
+                        src="img/shopping-cart.png" alt="">
+                </div>
+                <div class="rounded-3xl border border-gray-400 p-2 relative hover:shadow-2xl mb-3">
+                    <img class=" rounded-3xl w-auto" src="img/n5.jpg">
+                    <p class="font-light">adidas</p>
+                    <h2 class="font-bold font-serif">Cotton astronaut t-shirts</h2>
+                    <div class="flex gap-1 w-3 h-3">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                    </div>
+                    <p>$200/-</p>
+                    <img class="w-10 h-10 rounded-full p-1 bg-gray-400 absolute bottom-2 right-2"
+                        src="img/shopping-cart.png" alt="">
+                </div>
+                <div class="rounded-3xl border border-gray-400 p-2 relative hover:shadow-2xl mb-3">
+                    <img class=" rounded-3xl w-auto" src="img/n6.jpg">
+                    <p class="font-light">adidas</p>
+                    <h2 class="font-bold font-serif">Cotton astronaut t-shirts</h2>
+                    <div class="flex gap-1 w-3 h-3">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                    </div>
+                    <p>$200/-</p>
+                    <img class="w-10 h-10 rounded-full p-1 bg-gray-400 absolute bottom-2 right-2"
+                        src="img/shopping-cart.png" alt="">
+                </div>
+                <div class="rounded-3xl border border-gray-400 p-2 relative hover:shadow-2xl mb-3">
+                    <img class=" rounded-3xl w-auto" src="img/n7.jpg">
+                    <p class="font-light">adidas</p>
+                    <h2 class="font-bold font-serif">Cotton astronaut t-shirts</h2>
+                    <div class="flex gap-1 w-3 h-3">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                    </div>
+                    <p>$200/-</p>
+                    <img class="w-10 h-10 rounded-full p-1 bg-gray-400 absolute bottom-2 right-2"
+                        src="img/shopping-cart.png" alt="">
+                </div>
+                <div class="rounded-3xl border border-gray-400 p-2 relative hover:shadow-2xl mb-3">
+                    <img class=" rounded-3xl w-auto" src="img/n8.jpg">
+                    <p class="font-light">adidas</p>
+                    <h2 class="font-bold font-serif">Cotton astronaut t-shirts</h2>
+                    <div class="flex gap-1 w-3 h-3">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                        <img src="img/star.png">
+                    </div>
+                    <p>$200/-</p>
+                    <img class="w-10 h-10 rounded-full p-1 bg-gray-400 absolute bottom-2 right-2"
+                        src="img/shopping-cart.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- few pics -->
+        <div class="flex flex-col justify-end m-[50px] w-1/2">
+            <img src="img/b17.jpg" alt="">
+            <img src="img/b10.jpg" alt="">
+        </div>
+        <!-- before the footer -->
+        <div class="m-[100px] flex flex-row justify-center items-center max-lg:flex-col">
+            <div class="relative">
+                <img src="img/b7.jpg" alt="">
+                <div class="absolute bottom-10 left-4">
+                    <h4 class="text-white font-bold text-2xl">SEASONAL SALE</h4>
+                    <p class="text-red-600 text-lg font-semibold"> Winter collection -50% OFF</p>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="img/b4.jpg" alt="">
+                <div class="absolute bottom-10 left-4">
+                    <h4 class="text-white font-bold text-2xl">NEW FOOTWARE COLLECTION</h4>
+                    <p class="text-red-600 text-lg font-semibold"> Spring/Summer 2023 </p>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="img/b18.jpg" alt="">
+                <div class="absolute bottom-10 left-4">
+                    <h4 class="text-white font-bold text-2xl">T-SHIRTS</h4>
+                    <p class="text-red-600 text-lg font-semibold"> New Trendy Prints </p>
+                </div>
+            </div>
+        </div>
+        <section class="bg-slate-900 flex flex-row gap-x-24 max-lg:flex-col max-sm:flex-col">
+            <div class="flex flex-col items-start pl-16 pt-16">
+                <h3 class="text-2xl font-bold text-white"> Sign Up For Newsletters </h3><br>
+                <p class="text-gray-500 font-sans font-semibold text-lg">Get E-mail updates about our latest shop and
+                    <span class="text-red-500">special offers.</span>
+                </p>
+            </div>
+            <div class="flex items-center justify-center h-24">
+                <input type="email"
+                    class="bg-white relative rounded-sm flex-1 px-4 py-2 text-gray-700 placeholder-gray-500 outline-none w-[400px]"
+                    placeholder="Your email address" />
+                <button class="bg-teal-500 px-6 py-2 text-white font-medium hover:bg-teal-600 transition">
+                    Sign Up
+                </button>
+            </div>
+
+            <!-- footer -->
+            <footer>
+
+            </footer>
+        </section>
+        <script src="script.js"></script>
+    </div>
 </body>
 
 </html>
