@@ -1,4 +1,4 @@
-/*! tailwindcss v4.0.1 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v4.0.3 | MIT License | https://tailwindcss.com */
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
@@ -554,11 +554,11 @@
   .bottom-10 {
     bottom: calc(var(--spacing) * 10);
   }
-  .left-0 {
-    left: calc(var(--spacing) * 0);
-  }
   .left-4 {
     left: calc(var(--spacing) * 4);
+  }
+  .m-9 {
+    margin: calc(var(--spacing) * 9);
   }
   .m-\[50px\] {
     margin: 50px;
@@ -574,6 +574,9 @@
   }
   .mx-4 {
     margin-inline: calc(var(--spacing) * 4);
+  }
+  .mx-auto {
+    margin-inline: auto;
   }
   .mt-3 {
     margin-top: calc(var(--spacing) * 3);
@@ -656,11 +659,17 @@
   .w-64 {
     width: calc(var(--spacing) * 64);
   }
+  .w-\[100vw\] {
+    width: 100vw;
+  }
   .w-\[400px\] {
     width: 400px;
   }
   .w-auto {
     width: auto;
+  }
+  .max-w-\[1400px\] {
+    max-width: 1400px;
   }
   .flex-1 {
     flex: 1;
@@ -670,10 +679,6 @@
   }
   .border-collapse {
     border-collapse: collapse;
-  }
-  .-translate-x-full {
-    --tw-translate-x: -100%;
-    translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .translate-x-full {
     --tw-translate-x: 100%;
@@ -728,6 +733,9 @@
       margin-block-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-y-reverse)));
     }
   }
+  .overflow-hidden {
+    overflow: hidden;
+  }
   .rounded-3xl {
     border-radius: var(--radius-3xl);
   }
@@ -753,11 +761,17 @@
   .bg-gray-400 {
     background-color: var(--color-gray-400);
   }
+  .bg-gray-500 {
+    background-color: var(--color-gray-500);
+  }
   .bg-gray-900 {
     background-color: var(--color-gray-900);
   }
   .bg-green-300 {
     background-color: var(--color-green-300);
+  }
+  .bg-green-500 {
+    background-color: var(--color-green-500);
   }
   .bg-pink-300 {
     background-color: var(--color-pink-300);
@@ -773,6 +787,9 @@
   }
   .bg-slate-100 {
     background-color: var(--color-slate-100);
+  }
+  .bg-slate-200 {
+    background-color: var(--color-slate-200);
   }
   .bg-slate-400 {
     background-color: var(--color-slate-400);
@@ -800,6 +817,18 @@
   }
   .bg-\[url\(\/img\/hero4\.png\)\] {
     background-image: url(/img/hero4.png);
+  }
+  .bg-\[url\(img\/b1\.jpeg\)\] {
+    background-image: url(img/b1.jpeg);
+  }
+  .bg-\[url\(img\/b2\.jpg\)\] {
+    background-image: url(img/b2.jpg);
+  }
+  .bg-\[url\(img\/button\.png\)\] {
+    background-image: url(img/button.png);
+  }
+  .bg-\[url\(img\/hero4\.png\)\] {
+    background-image: url(img/hero4.png);
   }
   .bg-cover {
     background-size: cover;
@@ -982,6 +1011,20 @@
   .outline-none {
     --tw-outline-style: none;
     outline-style: none;
+  }
+  .hover\:bg-amber-400 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-amber-400);
+      }
+    }
+  }
+  .hover\:bg-gray-500 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-gray-500);
+      }
+    }
   }
   .hover\:bg-green-600 {
     &:hover {
