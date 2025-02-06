@@ -19,8 +19,8 @@
                     <a class="hover:text-green-600 hover:underline" href="blog.html">Blog</a>
                     <a class="hover:text-green-600 hover:underline" href="about.html">About</a>
                     <a class="hover:text-green-600 hover:underline" href="contact.html">Contact-Us</a>
-                    <a class="hover:text-green-600 hover:underline" href="cart.html"> <img class="w-8"
-                            src="img/shopping-bag.png"></a>
+                    <a class="hover:text-green-600 hover:underline relative mr-6" href="cart.html"> <img class="w-8"
+                            src="img/shopping-cart.png"><span class="w-5 h-5 text-sm rounded-full bg-red-500 p-1 flex justify-center items-center absolute -bottom-1 -right-1">0</span></a>
                 </nav>
 
                 <a id="menuBtn" href="#" class="flex lg:hidden"> <img class="h-8 pr-2" src="img/menu.png" alt=""></a>
@@ -49,7 +49,7 @@
         </div>
     </div>
     <div class="">
-        <div class="grid grid-cols-4 m-[50px] gap-4 max-sm:grid-cols-2 max-md:grid-cols-3">
+        <di v class="grid grid-cols-4 m-[50px] gap-4 max-sm:grid-cols-2 max-md:grid-cols-3">
             <div class="rounded-3xl border border-gray-400  p-2 relative hover:shadow-2xl md:shrink-0">
                 <img class=" rounded-3xl md:shrink-0" src="img/f1.jpg">
                 <p class="font-light">adidas</p>
@@ -173,6 +173,43 @@
             </div>
         </div>
     </div>
+</div>
+
+<!-- dining chairs -->
+
+<div class="cart-tab w-[400px] bg-gray-700 text-white fixed top-0 right-0 bottom-0 inset-auto grid grid-rows-[70px_1fr_70px]">
+    <h1 class="h1 font-bold text-3xl m-4 flex-1 justify-center items-center"> SHOPPING CART</h1>
+    <div class="List-cart space-y-2 overflow-auto`">
+        <div class="item grid grid-cols-[70px_150px_50px_1fr] gap-2 items-center text-center">
+            <div class="img w-full rounded-lg">
+                <img src="img/f1.jpg" alt="">
+            </div>
+            <div class="name"> shirt</div>
+            <div class="price"> £200</div>
+            <div class="quantity text-black cursor-pointer">
+                <span class="minus inline-block w-[25px] h-[25px] bg-white rounded-full"> < </span>
+                <span class="inline-block w-[25px] h-[25px] bg-white rounded-full">1</span>
+                <span class="plus inline-block w-[25px] h-[25px] bg-white rounded-full">></span>
+            </div>
+        </div>
+        <div class="item grid grid-cols-[70px_150px_50px_1fr] gap-2 items-center text-center even:bg-gray-600">
+            <div class="img w-full rounded-lg">
+                <img src="img/f1.jpg" alt="">
+            </div>
+            <div class="name"> shirt</div>
+            <div class="price"> £200</div>
+            <div class="quantity text-black cursor-pointer">
+                <span class="minus inline-block w-[25px] h-[25px] bg-white rounded-full"> < </span>
+                <span class="inline-block w-[25px] h-[25px] bg-white rounded-full">1</span>
+                <span class="plus inline-block w-[25px] h-[25px] bg-white rounded-full">></span>
+            </div>
+        </div>
+    </div>
+    <div class="btn text-black font-serif grid grid-cols-2">
+        <button class="close bg-lime-300 rounded-xl"> CLOSE</button>
+        <button class="checkout rounded-xl bg-white"> CHECKOUT </button>
+    </div>
+
 </div>
 <script src="script.js"></script>
 </body>
