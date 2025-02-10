@@ -15,3 +15,10 @@ const cart = document.getElementById("cart");
 const ItemsSelected = [];
 
 cart.addEventListener("click", function addItem() {});
+
+let nums = document.getElementById("num");
+
+const item = document.getElementById("plusmore");
+item.addEventListener("click", () => {
+  nums = nums + 1;
+});
