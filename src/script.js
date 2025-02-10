@@ -11,9 +11,7 @@ closeBtn.addEventListener("click", () => {
 });
 
 // the shopping cart
-const cart= document.getElementById("cart");
-const ItemsSelected=[];
+const cart = document.getElementById("cart");
+const ItemsSelected = [];
 
-cart.addEventListener('click', function addItem(){
-   
-})
+cart.addEventListener("click", function addItem() {});
